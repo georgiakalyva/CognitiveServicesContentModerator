@@ -19,7 +19,7 @@ namespace ContentModeratorImages
             $"https://{AzureRegion}.api.cognitive.microsoft.com";
 
         // Your Content Moderator subscription key.
-        private static readonly string CMSubscriptionKey = "";
+        private static readonly string CMSubscriptionKey = "ENTER KEY HERE";
 
         // Returns a new Content Moderator client for your subscription.
         public static ContentModeratorClient NewClient()

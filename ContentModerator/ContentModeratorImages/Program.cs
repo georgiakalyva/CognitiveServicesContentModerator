@@ -1,7 +1,5 @@
 ﻿using Microsoft.Azure.CognitiveServices.ContentModerator;
 using Microsoft.Azure.CognitiveServices.ContentModerator.Models;
-using Microsoft.CognitiveServices.ContentModerator;
-using Microsoft.CognitiveServices.ContentModerator.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -25,7 +23,6 @@ namespace ContentModeratorImages
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
 
             List<EvaluationData> evaluationData = new List<EvaluationData>();
 
@@ -41,6 +38,7 @@ namespace ContentModeratorImages
             }
             Console.WriteLine(JsonConvert.SerializeObject(
                                evaluationData, Formatting.Indented));
+            Console.ReadLine();
 
         }
         private static EvaluationData EvaluateImage(ContentModeratorClient client, string imageUrl)
